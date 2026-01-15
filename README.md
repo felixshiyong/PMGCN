@@ -10,7 +10,7 @@ The analysis is modular. To reproduce the study, execute the core scripts in the
 | :--- | :--- | :--- |
 | **[`1_bulk_process.R`](1_bulk_process.R)** | R | **Data Foundation:** Downloads and processes bulk RNA-Seq data (e.g., from GEO). Performs normalization and generates the cross-disease gene co-expression network. |
 | **[`2_optimal_P_UC_optimized.ipynb`](2_optimal_P_UC_optimized.ipynb)** | Python | **Core Analysis:** Executes the controlled percolation process on the multi-disease network to identify key genes critical for connectivity. |
-| **[`3_Data Preparation for Machine Learning.R`](3_Data Preparation for Machine Learning.R)** | R | **Validation Prep:** Prepares the feature expression matrix for downstream machine learning analysis (e.g., classifier training) based on percolation results, corresponding to Figures 6 & 7 in the associated manuscript. |
+| **[`3_Data Preparation for Machine Learning.R`](3_Data_Preparation_for_Machine_Learning.R)** | R | **Validation Prep:** Prepares the feature expression matrix for downstream machine learning analysis (e.g., classifier training) based on percolation results, corresponding to Figures 6 & 7 in the associated manuscript. |
 | **[`4_sc_process.R`](4_sc_process.R)** | R | **Deep Validation:** Fetches and processes relevant single-cell RNA-Seq data to validate candidate biomarker expression patterns at cellular resolution. |
 
 **Other Files:** The functions of other files for figure generations are indicated by their respective filenames.
